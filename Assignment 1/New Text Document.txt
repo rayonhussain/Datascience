@@ -1,0 +1,8 @@
+switch(company_review,<=1,"Very Poor",>1 and <=2,"Poor",>2 and <=3,"Better",>3 and <=4,"Good",>4 and <=5,"Awesome")
+
+if(D2 <=1,"Very Poor",
+if(AND(D2>1,D2<=2),"Poor",
+if(AND(D2>2, D2<=3),"Better",
+if(AND(D2>3, D2<=4),"Good",
+if(AND(D2>4, D2<=5),"Awesome",
+"No Reviews")))))
