@@ -1,2 +1,0 @@
-select distinct(customer_name) from customer,branch
-where customer.customer_city in (select branch_city from branch where assets>500000) and customer_name in (select customer_name from borrower)
